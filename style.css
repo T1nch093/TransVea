@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+/*Estilo para la barra de navegacion*/
+.navbar{
+    height: 90px;
+    background-color: #ffffff;
+}
+/*Estilo para el logo de la barra de navegacion*/
+.navbar img{
+  width: 140px;
+  display: flex;
+  margin: 0 auto;
+}
+/*Estilo para los contenedores de contacto y Estandares*/
+.contenedor{
+  max-width: 1500px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  contain: paint;
+  background-color: #1a1f23;
+}
+.contenedor .contenedor-items{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 30px;
+  grid-row-gap: 30px;
+  width: 100%;
+  transition: .3s;
+  background-color: #1a1f23;
+}
+/*Estilo para el contenedor de contacto*/
+.contenedor .contenedor-items .item1 li{
+    list-style: none;
+    margin-left: 28%; 
+    padding-top: 10%;
+    font-weight: bold;
+}
+.contenedor .contenedor-items .item1 a{
+    text-decoration: none;
+    color: black;
+}
+.contenedor .contenedor-items .item1{
+    max-width: 500px;  
+    margin-left: 140px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    transition: .3s;
+    background-color: #bcd8c9;
+}
+.contenedor-items .item1:hover{
+  box-shadow: 0 0 10px #666;
+  scale: 1.05;
+}
+/*estilos contenedor Estandares*/
+.contenedor .contenedor-items .item2{
+    max-width: 500px;  
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .3s;
+    background-color: #bcd8c9;
+}
+.contenedor-items .item2:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+.contenedor-items .item2 .img-item{
+    width: 100%;
+}
+/*Estilo para el titulo de contacto*/
+.contenedor-items .item1 .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+}
+/*Estilo para titulo de Estandares*/
+.contenedor-items .item2 .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+}
+/*Estilo para pie de contacto*/
+.contenedor-items .item1 .precio-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: justify;
+    margin-left: 158px;
+    margin-top: 60px
+}
+/*Estilo para contenido de contacto*/
+.infocontacto li{
+   font-size: 16px;
+}
+/*Estilo para box de servicios*/
+.Servicios{
+    border-color: rgb(204, 201, 19);
+    border-style: solid;
+    border-width: 2px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+    background-color: #bcd8c9;
+}
+/*Estilo para titulo de box de servicios*/
+.Servicios h1{
+margin-left: 35%;
+font-size: 27px;
+margin-top: 10px;
+}
+/*Estilo para contenido de box de servicios*/
+.Servicios li{
+    margin-left: 5%;
+    font-size: 13px;
+    padding: 3px;
+}
+/*Estilo para linea horizontal*/
+.hr {
+    height: 1px;
+    background-color: rgb(73, 73, 73);
+}
+/*Estilo para cuerpo de pagina*/  
+main{
+    background-color: #1a1f23;
+}
+/*Estilo para formulario cotizador*/
+.form-container {
+    max-width: 430px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrado horizontal del formulario */
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 20px;
+    background-color:#bcd8c9 ;
+  }
+  /*Estilo para texto que aclara los necesario para cotizar*/
+  .importante{
+    text-align: justify;
+    max-width: 420px;
+    margin: 0 auto;
+
+  }
+  /* Estilos para los elementos del formulario */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+/*Estilo para los box de escritura del usuario*/
+  input[type="text"],
+  input[type="number"],
+  select,
+  input[type="tel"],
+  input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+/*Estilo para boton de enviar*/
+  input[type="submit"] {
+    background-color: #5a5555;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    width: 80%;
+    margin-left: 36px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #2b2929;
+  }
+
+  /* Estilos específicos para los campos requeridos */
+  input[required],
+  select[required],
+  input[type="radio"][required] {
+    border-color: black;
+  }
+
+  input[type="radio"][required]:before {
+    content: '*';
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    margin-left: -20px;
+  }
+  /*Estilo para box de descripcion*/
+  textarea{
+    width: 100%;
+  }
+
+
+
+
+/*responsive*/
+@media screen and (max-width:915px){
+    .contenedor{
+        display: block;
+    }
+    .contenedor-items{
+        width: 100% !important;
+    }
+    .navbar{
+        height: 90px;
+    }
+    .navbar img{
+      width: 130px;
+      display: block;
+      margin: 0 auto;
+    }
+    .contenedor .contenedor-items .item1 li{
+        list-style: none;
+        padding: 10px;
+        height: auto;
+        margin-left: 17%;
+    }
+    
+    .contenedor .contenedor-items .item1 a{
+    text-decoration: none;
+    color: black;
+    }
+    
+    .contenedor .contenedor-items .item1{
+        width: 100%;  
+        margin: 0 auto;
+        border: 1px solid #666;
+        border-radius: 10px;
+        transition: .3s;
+        padding: 10px;
+        background-color: #bcd8c9;
+    }
+    .contenedor .contenedor-items .item2{
+        max-width: 500px;  
+        padding: 10px;
+        margin:auto;
+        border: 1px solid #666;
+        border-radius: 10px;
+        padding: 10px;
+        transition: .3s;
+        background-color:#bcd8c9;
+    }
+    .contenedor-items .item1:hover{
+        box-shadow: 0 0 10px #666;
+        scale: 1.05;
+    }
+    .contenedor-items .item2:hover{
+        box-shadow: 0 0 10px #666;
+        scale: 1.05;
+    }
+    .contenedor-items .item2 .img-item{
+        width: 100%;
+    }
+    .contenedor-items .item1 .titulo-item{
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 10px;
+    }
+    .contenedor-items .item2 .titulo-item{
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 10px;
+    }
+    .contenedor-items .item1 .precio-item{
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: justify;
+        margin-left: 27%;
+    }
+    .infocontacto li{
+       
+       list-style: none;
+       padding: 10%;
+       margin-left: 8px;
+       font-size: 16px;
+    }
+    .Servicios{
+        border-color: rgb(47, 19, 204);
+        border-style: solid;
+        border-width: 2px;
+        color: rgb(0, 0, 0);
+        border-radius: 10px;
+        margin-bottom: 50px;
+        background-color: #bcd8c9;
+    }
+    
+    .Servicios h1{
+    margin-left: 26%;
+    font-size: 20px;
+    margin-top: 10px;
+    }
+    .Servicios li{
+        margin-left: 5%;
+        font-size: 13px;
+        padding: 3px;
+    } 
+    .form-container {
+        max-width: 388px; /* Ancho máximo del formulario */
+        margin: 0 auto; /* Centrado horizontal del formulario */
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        border-radius: 10px;
+      }
+      #formulario-container {
+        display: none;
+      }
+      
+      #formulario-desplegable {
+        font-size: 16px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+      }
+      
+      #formulario-desplegable option {
+        font-size: 14px;
+      }
+      
+      #formulario-desplegable:focus {
+        outline: none;
+        border-color: #666;
+      }
+      
+      #formulario-container.visible {
+        display: block;
+      }
+      
+      .importante{
+        text-align: justify;
+        max-width: 380px;
+        margin: 0 auto;
+        font-size: 16px;
+    
+      }
+    
+      /* Estilos para los elementos del formulario */
+      label {
+        display: block;
+        margin-bottom: 5px;
+        margin-left: 3px;
+      }
+    
+      input[type="text"],
+      input[type="number"],
+      select,
+      input[type="tel"],
+      input[type="email"] {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        background-color: #9cb8ac;
+
+      }
+    
+      input[type="submit"] {
+        background-color:#3a3e99;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        height: 40px;
+        width: 80%;
+        margin-left: 36px;
+      }
+    
+      input[type="submit"]:hover {
+        background-color: #5358b6;
+      }
+    
+      /* Estilos específicos para los campos requeridos */
+      input[required],
+      select[required],
+      input[type="radio"][required] {
+        border-color: black;
+      }
+    
+      input[type="radio"][required]:before {
+        content: '*';
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+        position: absolute;
+        margin-left: -20px;
+      }
+      textarea{
+        width: 100%;
+        border-color:#3a3e99;
+        
+      }
+   
+}
