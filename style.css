@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
 /*Estilo para la barra de navegacion*/
+body{
+    position: relative;
+}
 .navbar{
     height: 100px;
     background-color: #ffffff;
@@ -36,10 +39,11 @@
 /*Estilo para el contenedor de contacto*/
 .contenedor .contenedor-items .item1 li{
     list-style: none;
-    margin-left: 28%; 
+    margin-left: 28%;
     padding-top: 10%;
     font-weight: bold;
     color: white;
+    font-size: 16px;
 }
 .contenedor .contenedor-items .item1 a{
     text-decoration: none;
@@ -52,6 +56,7 @@
     border-radius: 10px;
     transition: .3s;
     background-color:#311abb;
+    align-items: center;
 }
 .contenedor-items .item1:hover{
   box-shadow: 0 0 10px #666;
@@ -74,15 +79,18 @@
 }
 .contenedor-items .item2 .img-item{
     width: 100%;
+    border-radius: 20px;
 }
 /*Estilo para el titulo de contacto*/
 .contenedor-items .item1 .titulo-item{
-    display: block;
+    display: flex;
     font-weight: bold;
-    text-align: center;
+    align-items: center;
     text-transform: uppercase;
     margin: 10px;
     color: white;
+    justify-content: center;
+    font-size: 20px;
 }
 /*Estilo para titulo de Estandares*/
 .contenedor-items .item2 .titulo-item{
@@ -91,21 +99,18 @@
     text-align: center;
     text-transform: uppercase;
     margin: 10px;
+    font-size: 20px;
 }
 /*Estilo para pie de contacto*/
 .contenedor-items .item1 .precio-item{
-    display: block;
-    text-align: center;
+    display: flex;
+    align-items: center;
     font-weight: bold;
     font-size: 16px;
     text-align: justify;
-    margin-left: 158px;
+    justify-content: center;
     margin-top: 50px;
     color: white;
-}
-/*Estilo para contenido de contacto*/
-.infocontacto li{
-   font-size: 16px;
 }
 /*Estilo para box de servicios*/
 .Servicios{
@@ -119,9 +124,11 @@
 }
 /*Estilo para titulo de box de servicios*/
 .Servicios h1{
-margin-left: 35%;
-font-size: 27px;
-margin-top: 10px;
+    font-size: 27px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*Estilo para contenido de box de servicios*/
 .Servicios li{
@@ -179,21 +186,26 @@ main{
     background-color: #d0a7f5;
   }
 /*Estilo para boton de enviar*/
-  input[type="submit"] {
+  button[type="submit"] {
     background-color: #0e03fc;
     color: white;
-    padding: 12px 20px;
+    /*padding: 12px 20px;*/
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
     height: 40px;
-    width: 80%;
-    margin-left: 36px;
+    width: 70%;
   }
 
-  input[type="submit"]:hover {
+  button[type="submit"]:hover {
     background-color: #4a38fd;
+  }
+  /*pocicionar boton en el centro*/
+  .boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   /* Estilos específicos para los campos requeridos */
@@ -214,18 +226,30 @@ main{
   /*Estilo para box de descripcion*/
   textarea{
     width: 100%;
+    border-color:#3a3e99;
+    border-radius: 10px;
+  }
+  /*Estilo par el pie de pagina derechos de autor*/
+  .derechos {
+    border-style: solid;
+    border-color: #311abb;
+    background: #311abb;
+  }
+  .derechos h1{
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 
-
-
+/*----------------------------------------------------*/
 
 /*responsive*/
 @media screen and (max-width:915px){
+  /*Estilo para los contenedores de contacto y Estandares*/
     .contenedor{
         display: block;
-    }
-    .contenedor-items{
-        width: 100% !important;
     }
     .navbar{
         height: 95px;
@@ -238,11 +262,13 @@ main{
       display: block;
       margin: 0 auto;
     }
+    /*Estilo para el contenedor de contacto*/
     .contenedor .contenedor-items .item1 li{
         list-style: none;
         padding: 10px;
         height: auto;
         margin-left: 17%;
+        font-size: 13px;
     }
     
     .contenedor .contenedor-items .item1 a{
@@ -259,6 +285,7 @@ main{
         padding: 10px;
         background-color: #311abb;
     }
+    /*estilos contenedor Estandares*/
     .contenedor .contenedor-items .item2{
         max-width: 500px;  
         padding: 10px;
@@ -281,35 +308,35 @@ main{
         width: 100%;
         border-radius: 20px;
     }
+    /*Estilo para el titulo de contacto*/
     .contenedor-items .item1 .titulo-item{
-        display: block;
+        display: flex;
         font-weight: bold;
-        text-align: center;
+        align-items: center;
         text-transform: uppercase;
         margin: 10px;
+        justify-content: center;
+        font-size: 15px;
     }
+    /*Estilo para titulo de Estandares*/
     .contenedor-items .item2 .titulo-item{
         display: block;
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
         margin: 10px;
+        font-size: 15px;
     }
+    /*Estilo para pie de contacto*/
     .contenedor-items .item1 .precio-item{
-        display: block;
-        text-align: center;
+        display: flex;
+        align-items: center;
         font-weight: bold;
         font-size: 16px;
         text-align: justify;
-        margin-left: 27%;
+        justify-content: center;
     }
-    .infocontacto li{
-       
-       list-style: none;
-       padding: 10%;
-       margin-left: 8px;
-       font-size: 16px;
-    }
+    /*Estilo para box de servicios*/
     .Servicios{
         border-color: #000042;
         border-style: solid;
@@ -319,11 +346,11 @@ main{
         margin-bottom: 50px;
         background-color: #4222d7;
     }
-    
+    /*Estilo para titulo de box de servicios*/
     .Servicios h1{
-    margin-left: 26%;
-    font-size: 20px;
-    margin-top: 10px;
+        font-size: 15px;
+        margin-top: 10px;
+        text-transform: uppercase;
     }
     .Servicios li{
         margin-left: 5%;
@@ -343,10 +370,11 @@ main{
       }
 
       .importante{
-        text-align: justify;
+        align-items: center;
+        text-align: center;
         max-width: 260px;
         margin: 0 auto;
-        font-size: 16px;
+        font-size: 13px;
     
       }
     
@@ -355,8 +383,9 @@ main{
         display: block;
         margin-bottom: 5px;
         margin-left: 3px;
+        font-size: 12px;
       }
-    
+    /*Estilo para los box de escritura del usuario*/
       input[type="text"],
       input[type="number"],
       select,
@@ -371,26 +400,27 @@ main{
         box-sizing: border-box;
         margin-bottom: 10px;
         background-color: #d0a7f5;
+        height: 30px;
 
       }
-    
-      input[type="submit"] {
-        background-color:#3a3e99;
+      /*Estilo para boton de enviar*/
+      button[type="submit"] {
+        background-color: #0e03fc;
         color: white;
-        padding: 12px 20px;
+        /*padding: 12px 20px;*/
         border: none;
         border-radius: 4px;
         cursor: pointer;
         font-size: 16px;
-        height: 40px;
-        width: 80%;
-        margin-left: 36px;
+        height: 30px;
+        width: 50%;
+        margin-top: 4px;
+        margin-bottom: 4px;
       }
     
-      input[type="submit"]:hover {
-        background-color: #5358b6;
-      }
-    
+      button[type="submit"]:hover {
+        background-color: #4a38fd;
+      }    
       /* Estilos específicos para los campos requeridos */
       input[required],
       select[required],
@@ -406,10 +436,19 @@ main{
         position: absolute;
         margin-left: -20px;
       }
-      textarea{
-        width: 100%;
-        border-color:#3a3e99;
-        
-      }
+      /*Estilo par el pie de pagina derechos de autor*/
+      .derechos {
+         border-style: solid;
+         border-color: #311abb;
+         background: #311abb;
+  }
+      .derechos h1{
+         font-size: 12px;
+         font-weight: bold;
+         align-items: center;
+         display: flex;
+         justify-content: center;
+         margin-top: 3px;
+  }
    
 }
