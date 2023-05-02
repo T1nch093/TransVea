@@ -15,12 +15,7 @@ $mensaje .= "Recorrido" . $recorrido . "\r\n"
 $mensaje .= "Descripcion" . $mensaje . "\r\n";
 $mensaje .= "Enviado el " . date["d/m/y", time()];
 
-$enlace = mysql_connect($nombre, $email, $telefono, $ubicacion, $recorrido, $descripcion)
-$insertarDatos = "INSERT INTO datos VALUES ("$nombre" "$email" "$telefono" "$ubicacion" "$recorrido" "$descripcion")"
-$ejecutarInsertion = mysqli_query($enlace, $insertarDatos);
-if(!$ejecutarInsertion){
-    echo "error";
-}
+
 $para = "martinservetti@gmail.com"; //mail donde llega el fomulario
 $asunto = "Pedido de cotizacion de". $nombre; //Asunto del mail
 
