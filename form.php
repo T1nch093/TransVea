@@ -16,7 +16,7 @@ $mensaje .= "Descripcion" . $mensaje . "\r\n";
 $mensaje .= "Enviado el " . date["d/m/y", time()];
 
 
-$para = "martinservetti@gmail.com"; //mail donde llega el fomulario
+$para = "ericamado21@gmail.com"; //mail donde llega el fomulario
 $asunto = "Pedido de cotizacion de". $nombre; //Asunto del mail
 
 //la funcion mail envia un correo electronico y el orden es:
