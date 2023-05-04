@@ -166,6 +166,7 @@ main{
     display: block;
     margin-bottom: 5px;
     color: rgb(245, 231, 231);
+    margin-left: 12px;
   }
 /*Estilo para los box de escritura del usuario*/
   input[type="text"],
@@ -174,7 +175,7 @@ main{
   input[type="tel"],
   input[type="email"] {
     display: block;
-    width: 100%;
+    width: 95%;
     padding: 8px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -182,6 +183,7 @@ main{
     box-sizing: border-box;
     margin-bottom: 10px;
     background-color: #d0a7f5;
+    margin: 0 auto;
   }
 /*Estilo para boton de enviar*/
   button[type="submit"] {
@@ -222,7 +224,7 @@ main{
   }
   /*Estilo para box de descripcion*/
   textarea{
-    width: 90%;
+    width: 97%;
     height: 60%;
     border-color:#3a3e99;
     border-radius: 10px;
@@ -406,6 +408,7 @@ main{
         margin-bottom: 5px;
         margin-left: 3px;
         font-size: 12px;
+        margin-left: 12px;
       }
     /*Estilo para los box de escritura del usuario*/
       input[type="text"],
@@ -414,7 +417,7 @@ main{
       input[type="tel"],
       input[type="email"] {
         display: block;
-        width: 100%;
+        width: 95%;
         padding: 8px;
         font-size: 13px;
         border: 1px solid #ccc;
