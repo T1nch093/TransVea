@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
 /*Estilo para la barra de navegacion*/
+
 .navbar{
     height: 100px;
     background-color: #ffffff;
@@ -221,7 +222,8 @@ main{
   }
   /*Estilo para box de descripcion*/
   textarea{
-    width: 100%;
+    width: 90%;
+    height: 60%;
     border-color:#3a3e99;
     border-radius: 10px;
   }
@@ -230,11 +232,17 @@ main{
     border-style: solid;
     border-color: #311abb;
     background: #5a44df;
+
   }
   .derechos img{
     width: 100px;    
+    
+    
+  }
+  .img{
     display: flex;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;  
   }
   .derechos h6{
     font-size: 14px;
@@ -245,7 +253,8 @@ main{
   }
   .derechos svg{
     display: flex;
-    margin: 0 auto;
+    margin-right: 20px;
+    
   }
   .derechos h1{
     font-size: 14px;
