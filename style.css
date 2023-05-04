@@ -233,7 +233,23 @@ main{
   .derechos {
     border-style: solid;
     border-color: #311abb;
-    background: #311abb;
+    background: #5a44df;
+  }
+  .derechos img{
+    width: 100px;    
+    display: flex;
+    margin: 0 auto;
+  }
+  .derechos h6{
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .derechos svg{
+    display: flex;
+    margin: 0 auto;
   }
   .derechos h1{
     font-size: 14px;
@@ -241,6 +257,7 @@ main{
     align-items: center;
     display: flex;
     justify-content: center;
+    margin-bottom: -15px;
   }
 
 /*----------------------------------------------------*/
